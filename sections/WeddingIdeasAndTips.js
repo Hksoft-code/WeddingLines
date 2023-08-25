@@ -21,7 +21,7 @@ const WeddingIdeasAndTips = () => {
           />
         ))}
       </div> */}
-      <div className="flex w-full flex-wrap mt-2">
+      <div className="flex mt-2 overflow-x-scroll enjoy-content">
         {weddingTips.map((weddingTip, index) => (
           <RealComponent
             image={weddingTip.image}

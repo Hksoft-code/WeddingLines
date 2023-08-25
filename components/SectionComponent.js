@@ -3,8 +3,8 @@ import Section from "./Section";
 
 const SectionComponent = ({ header, text, items, showPeopleIcon }) => {
   return (
-    <Section header={header} text={text} style={{ overflowX: "auto" }}>
-      <div className="flex hide-scrollbar">
+    <Section header={header} text={text}>
+      <div className="flex overflow-x-scroll enjoy-content">
         {items.map((item, index) => (
           <CarouselCard
             key={index}

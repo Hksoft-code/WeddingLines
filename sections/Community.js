@@ -10,7 +10,7 @@ const Community = () => {
       text="Ask questions and get answers with the help of other people planning weddings."
       style={{ marginTop: "-5vh" }}
     >
-      <div className="flex flex-wrap">
+      <div className="flex overflow-x-scroll enjoy-content">
         {questions.map((question, index) => (
           <CommunityComponent
             date={question.date}

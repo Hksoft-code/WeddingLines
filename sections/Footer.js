@@ -25,21 +25,13 @@ const Footer = () => {
         backgroundColor: "rgba(0, 0, 0, .1)",
       }}
     >
-      <div
-        style={{
-          borderBottom: "1px solid rgba(0, 0, 0, .2)",
-          paddingBottom: "15px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="footer">
         <div>
           <p className="font-bold mb-4 text-md">Information</p>
           <div>
             {contactLinks.map((contactLink, index) => (
-              <p>
+              <p key={index}>
                 <Link
-                  key={index}
                   label={contactLink.label}
                   route={contactLink.route}
                   _class="mb-2 text-sm"
@@ -50,7 +42,9 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p className="font-bold mb-4 text-md">Get the WeddingWire app</p>
+          <p className="font-bold mb-4 text-md lg:mt-auto mt-6">
+            Get the WeddingWire app
+          </p>
           <span className="flex flex-wrap mb-4">
             <Image
               src={weddingWlogo}
@@ -71,12 +65,12 @@ const Footer = () => {
           <SocialButton icon={<IoLogoApple size={50} />} />
         </div>
         <div>
-          <p className="font-bold mb-4 text-md">Follow us on</p>
+          <p className="font-bold mb-4 text-md lg:mt-auto mt-6">Follow us on</p>
           <SocialButton icon={<BsFacebook size={30} />} />
           <SocialButton icon={<BsTwitter size={30} />} />
           <SocialButton icon={<BsPinterest size={30} />} />
           <SocialButton icon={<AiFillInstagram size={30} />} />
-          <div className="mt-6 text-center">
+          <div className="mt-6 lg:text-center">
             <p className="font-semibold mb-2">
               Contact a wedding expert for free
             </p>
@@ -87,7 +81,7 @@ const Footer = () => {
             <p className="text-red-500 font-bold">Call XX XXXXXXXXX</p>
           </div>
         </div>
-        <div>
+        <div className="lg:mt-auto mt-6">
           <p className="font-bold mb-4 text-md">Choose a country</p>
           <button
             type="button"

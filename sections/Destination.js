@@ -9,7 +9,7 @@ const Destination = () => {
       header="Plan your destination wedding"
       text="No matter where in the world you want to get married, WeddingWire directory of international wedding professionals can help you celebrate."
     >
-      <div className="flex">
+      <div className="flex overflow-x-scroll enjoy-content">
         {destinations.map((destination) => (
           <DestinationComponent
             image={destination.image}

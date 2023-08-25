@@ -3,15 +3,17 @@ import Card from "./Card";
 
 const DestinationComponent = ({ image, countryName }) => {
   return (
-    <Card display="flex mr-5 flex-col">
-      <Image
-        src={image}
-        alt=""
-        width={250}
-        height={300}
-        className="rounded-md"
-      />
-      <p className="mt-3 font-semibold">{countryName}</p>
+    <Card display="mr-5 flex-col">
+      <div className="flex flex-col md:w-auto w-[280px]">
+        <Image
+          src={image}
+          alt=""
+          width={250}
+          height={300}
+          className="rounded-md"
+        />
+        <p className="mt-3 font-semibold">{countryName}</p>
+      </div>
     </Card>
   );
 };

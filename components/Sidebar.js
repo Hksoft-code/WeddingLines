@@ -38,6 +38,9 @@ const Sidebar = ({ showSideBar }) => {
       style={{
         backgroundColor: "#fff",
         borderRight: "1px solid rgba(0, 0, 0, .2)",
+        borderBottom: "1px solid rgba(0, 0, 0, .2)",
+        borderBottomRightRadius: 10,
+        marginTop: -8,
       }}
     >
       {!showHiddenLinks ? (

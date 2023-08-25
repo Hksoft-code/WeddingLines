@@ -10,7 +10,7 @@ const RealWeddings = () => {
         header="Real Weddings"
         text="Browse by location to find wedding professionals in your area and view photos of their work"
       >
-        <div className="flex w-full flex-wrap mt-2">
+        <div className="flex w-full mt-2 overflow-x-scroll enjoy-content">
           {realWeddings.map((realWedding, index) => (
             <RealComponent
               image={realWedding.image}

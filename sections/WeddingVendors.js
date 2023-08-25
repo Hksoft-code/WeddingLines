@@ -10,7 +10,10 @@ const WeddingVendors = () => {
         showPeopleIcon={true}
         items={vendors}
       />
-      <div className="p-1" style={{ marginLeft: 40 }}>
+      <div
+        className="p-1 md:block flex overflow-x-scroll enjoy-content"
+        style={{ marginLeft: 40 }}
+      >
         {navButtons.map((button, index) => (
           <button
             type="button"

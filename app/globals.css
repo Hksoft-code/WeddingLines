@@ -27,28 +27,54 @@ body {
 }
 
 .homepage {
-  background: url("/women.jpg");
+  background: url(/women.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 .venue {
-  background: url("/weddingvenue.jpg");
+  background: url(/weddingvenue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+
 .btn:hover {
   background-color: black;
   color: white;
 }
 
 .planning {
-  background: url("/lovers.avif");
+  background: url(/lovers.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .homepage {
+    height: 65vh;
+  }
+}
+
+.enjoy-content::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 395px) {
+  .set-width {
+    width:83%;
+  }
+}
+.footer {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
 }

@@ -11,10 +11,12 @@ const WeddingWebsites = () => {
       text="Quickly set up and share all of your details in one place"
       style={{ marginTop: "-5vh" }}
     >
-      <div className="flex">
+      <div className="flex overflow-x-scroll enjoy-content">
         {weddingWebsites.map((weddingWebsite) => (
           <Card key={weddingWebsite}>
-            <Image src={weddingWebsite} alt="" width={300} height={350} />
+            <div className="md:w-auto w-[280px]">
+              <Image src={weddingWebsite} alt="" width={300} height={350} />
+            </div>
           </Card>
         ))}
       </div>

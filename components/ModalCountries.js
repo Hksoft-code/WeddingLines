@@ -5,11 +5,10 @@ const ModalCountries = ({ countries, header }) => {
     <div className="mt-6">
       <p className="font-bold">{header}</p>
       {countries.map((country) => (
-        <p className="mt-4">
+        <p className="mt-4" key={country.label}>
           <Link
             label={country.label}
             route={country.route}
-            key={country.label}
             _class="hover:text-red-800 hover:font-semibold"
           />
         </p>

@@ -3,11 +3,13 @@ import { awards } from "@/components/constants";
 
 const CouplesChoice = () => {
   return (
-    <SectionComponent
-      header="Couples’ Choice Awards"
-      text="Explore winners in your area."
-      items={awards}
-    />
+    <div className="mr-4">
+      <SectionComponent
+        header="Couples’ Choice Awards"
+        text="Explore winners in your area."
+        items={awards}
+      />
+    </div>
   );
 };
 
