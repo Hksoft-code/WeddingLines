@@ -9,12 +9,12 @@ const WeddingWebsites = () => {
     <Section
       header="Create your wedding website"
       text="Quickly set up and share all of your details in one place"
-      style={{ marginTop: "-5vh" }}
+      style={{ marginTop: "-1vh" }}
     >
       <div className="flex overflow-x-scroll enjoy-content">
         {weddingWebsites.map((weddingWebsite) => (
           <Card key={weddingWebsite}>
-            <div className="md:w-auto w-[280px]">
+            <div className="w-[280px]">
               <Image src={weddingWebsite} alt="" width={300} height={350} />
             </div>
           </Card>

@@ -4,15 +4,17 @@ import Link from "./Links/Link";
 
 const CommunityComponent = ({ header, text, image, user, date, route }) => {
   return (
-    <div className="md:w-1/4 w-auto">
-      <div className="md:w-auto w-[280px] h-[41vh]">
+    <div className="w-auto">
+      <div className="w-[260px] md:w-auto">
         <Card display="p-6 overflow-hidden">
-          <Link
-            label={header}
-            route={route}
-            _class="font-bold hover:text-red-800"
-          />
-          <p className="mt-2">{text}</p>
+          <div className="h-[35vh] overflow-x-scroll enjoy-content">
+            <Link
+              label={header}
+              route={route}
+              _class="font-bold hover:text-red-800"
+            />
+            <p className="mt-2">{text}</p>
+          </div>
         </Card>
         <div className="flex flex-wrap mt-3 ml-2">
           <Image

@@ -15,7 +15,7 @@ const CarouselCard = ({
 }) => {
   return (
     <Card display="w-full mt-6 mr-3 hover:shadow-lg">
-      <div className="md:w-auto w-[300px]">
+      <div className="w-[290px]">
         <div
           style={{
             backgroundImage: `url(${image})`,
@@ -26,7 +26,7 @@ const CarouselCard = ({
             display: "flex",
             flexWrap: "wrap",
           }}
-          className="md:w-auto set-width"
+          className="w-full"
         ></div>
         <div className="h-auto p-2">
           <Link

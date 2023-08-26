@@ -9,7 +9,7 @@ const WeddingIdeasAndTips = () => {
     <Section
       header="Wedding ideas and tips"
       text="Get inspired with the latest trends and advice from our wedding experts"
-      style={{ marginTop: "-5vh" }}
+      style={{ marginTop: "-1vh" }}
     >
       {/* <div className="flex justify-between">
         {weddingIdeas.map((weddingIdea, index) => (
@@ -21,7 +21,7 @@ const WeddingIdeasAndTips = () => {
           />
         ))}
       </div> */}
-      <div className="flex mt-2 overflow-x-scroll enjoy-content">
+      <div className="flex lg:mt-2 mt-6 overflow-x-scroll enjoy-content">
         {weddingTips.map((weddingTip, index) => (
           <RealComponent
             image={weddingTip.image}

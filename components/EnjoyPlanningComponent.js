@@ -12,7 +12,27 @@ const EnjoyPlanningComponent = () => {
       text="Start planning your wedding with us, it's free!"
     >
       <div className="flex md:flex-col flex-row overflow-x-scroll enjoy-content">
-        <div className="flex mt-6">
+        <div className="flex md:mt-auto mt-3">
+          <span className="md:w-full w-[330px]">
+            <EnjoyCard
+              header="Wedding venues"
+              text="Photos, reviews, and so much more... get in touch from here!"
+              label="Explore venues"
+              linkRoute="#route1"
+              showBackgroundImage={true}
+            />
+          </span>
+          <span className="md:w-full w-[360px]">
+            <EnjoyCard
+              header="Vendors"
+              text="Find the best wedding vendors near you in every category."
+              label="Start your search"
+              linkRoute="#route2"
+              showBackgroundImage={true}
+            />
+          </span>
+        </div>
+        <div className="flex mt-3">
           <span className="md:w-auto w-[360px]">
             <EnjoyCard
               header="Your free wedding website"
@@ -30,7 +50,15 @@ const EnjoyPlanningComponent = () => {
               label="Get inspired here"
               linkRoute="#route4"
               showBackgroundImage={false}
-              icon={<Image src={buld} height={50} width={50} alt="" />}
+              icon={
+                <Image
+                  src={buld}
+                  height={35}
+                  width={35}
+                  alt=""
+                  className="m-3"
+                />
+              }
             />
           </span>
           <span className="md:w-auto w-[360px]">
@@ -40,27 +68,15 @@ const EnjoyPlanningComponent = () => {
               label="Discover our tools"
               linkRoute="#route5"
               showBackgroundImage={false}
-              icon={<Image src={calender} height={50} width={50} alt="" />}
-            />
-          </span>
-        </div>
-        <div className="flex md:mt-auto mt-6">
-          <span className="md:w-auto w-[360px]">
-            <EnjoyCard
-              header="Wedding venues"
-              text="Photos, reviews, and so much more... get in touch from here!"
-              label="Explore venues"
-              linkRoute="#route1"
-              showBackgroundImage={true}
-            />
-          </span>
-          <span className="md:w-auto w-[360px]">
-            <EnjoyCard
-              header="Vendors"
-              text="Find the best wedding vendors near you in every category."
-              label="Start your search"
-              linkRoute="#route2"
-              showBackgroundImage={true}
+              icon={
+                <Image
+                  src={calender}
+                  height={25}
+                  width={25}
+                  alt=""
+                  className="m-3"
+                />
+              }
             />
           </span>
         </div>
