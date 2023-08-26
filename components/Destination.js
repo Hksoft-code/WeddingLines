@@ -3,8 +3,8 @@ import Card from "./Card";
 
 const DestinationComponent = ({ image, countryName }) => {
   return (
-    <Card display="mr-5 flex-col">
-      <div className="flex flex-col w-[280px] h-[35vh]">
+    <Card display="mr-5 flex-col h-[35vh]">
+      <div className="flex flex-col w-[280px]">
         <Image
           src={image}
           alt=""
