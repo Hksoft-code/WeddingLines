@@ -4,7 +4,7 @@ import Card from "./Card";
 const DestinationComponent = ({ image, countryName }) => {
   return (
     <Card display="mr-5 flex-col">
-      <div className="flex flex-col md:w-auto w-[280px]">
+      <div className="flex flex-col w-[280px]">
         <Image
           src={image}
           alt=""

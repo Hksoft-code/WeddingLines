@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "./Card";
 import Link from "./Links/Link";
 
@@ -12,7 +11,7 @@ const EnjoyCard = ({
 }) => {
   return (
     <Card setWidth="w-full">
-      <div className="md:h-auto h-[35vh] flex">
+      <div className="flex enjoy-card overflow-y-scroll enjoy-content">
         <div className={`${showBackgroundImage ? "w-1/2" : "w-3/4"} p-3`}>
           <p className="font-bold text-xl">{header}</p>
           <p className="mt-2 mb-2">{text}</p>

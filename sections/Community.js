@@ -8,7 +8,7 @@ const Community = () => {
     <Section
       header="Community"
       text="Ask questions and get answers with the help of other people planning weddings."
-      style={{ marginTop: "-5vh" }}
+      style={{ marginTop: "-1vh" }}
     >
       <div className="flex overflow-x-scroll enjoy-content">
         {questions.map((question, index) => (

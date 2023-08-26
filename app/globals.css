@@ -61,11 +61,6 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 395px) {
-  .set-width {
-    width:83%;
-  }
-}
 .footer {
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   padding-bottom: 15px;
@@ -77,4 +72,14 @@ body {
   .footer {
     flex-direction: column;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .enjoy-card {
+    height: 45vh;
+  }
+}
+
+.enjoy-card {
+  height: 35vh;
 }
