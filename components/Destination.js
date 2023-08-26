@@ -8,8 +8,8 @@ const DestinationComponent = ({ image, countryName }) => {
         <Image
           src={image}
           alt=""
-          width={250}
-          height={300}
+          width={300}
+          height={400}
           className="rounded-md"
         />
         <p className="mt-3 font-semibold">{countryName}</p>
