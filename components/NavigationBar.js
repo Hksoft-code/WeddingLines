@@ -29,8 +29,8 @@ const NavigationBar = () => {
   return (
     <div>
       <div
-        className="pr-8 pl-8 font-bold pb-3 border-l-0 border-r-0 border-t-0"
-        style={{ border: "1px solid rgba(0, 0, 0, .2)" }}
+        className="pr-8 pl-8 font-bold pb-3 border border-t-8 border-red-600"
+        style={{ borderBottom: "1px solid rgba(0, 0, 0, .2)" }}
       >
         <div className="lg:flex m-4 lg:justify-end">
           <span className="mr-1" style={{ marginTop: 2 }}>
@@ -106,7 +106,6 @@ const NavigationBar = () => {
         <BridesHiddenLinks brides={bride} mouseLeave={() => setBrides(false)} />
         <GroomHiddenLinks grooms={groom} mouseLeave={() => setGrooms(false)} />
         <BlogHiddenLinks blogs={blog} mouseLeave={() => setBlogs(false)} />
-        {null}
       </div>
     </div>
   );

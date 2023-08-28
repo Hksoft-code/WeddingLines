@@ -58,7 +58,7 @@ const Footer = () => {
               className="text-sm"
             >
               Plan your wedding on the go
-              <br /> with the WeddingWire app
+              <br /> with the Wedding Line app
             </p>
           </span>
           <SocialButton icon={<BiLogoPlayStore size={50} />} />
