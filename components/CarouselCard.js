@@ -15,7 +15,7 @@ const CarouselCard = ({
 }) => {
   return (
     <Card display="w-full mt-6 mr-3 hover:shadow-lg">
-      <div className="w-[290px]">
+      <div className="w-[290px] h-[300px]">
         <div
           style={{
             backgroundImage: `url(${image})`,

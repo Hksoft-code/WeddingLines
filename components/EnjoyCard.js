@@ -11,7 +11,7 @@ const EnjoyCard = ({
 }) => {
   return (
     <Card setWidth="w-full">
-      <div className="flex enjoy-card overflow-y-scroll enjoy-content">
+      <div className="flex enjoy-card overflow-y-scroll enjoy-content h-[270px]">
         <div className={`${showBackgroundImage ? "w-1/2" : "w-3/4"} p-3`}>
           <p className="font-bold text-xl">{header}</p>
           <p className="mt-2 mb-2">{text}</p>
@@ -22,7 +22,7 @@ const EnjoyCard = ({
           />
         </div>
         {showBackgroundImage ? (
-          <div className="w-1/2 venue"></div>
+          <div className="w-1/2 venue h-auto"></div>
         ) : (
           <div className="w-1/4">{icon}</div>
         )}
