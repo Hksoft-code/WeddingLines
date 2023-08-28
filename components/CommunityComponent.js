@@ -7,7 +7,7 @@ const CommunityComponent = ({ header, text, image, user, date, route }) => {
     <div className="w-auto">
       <div className="w-[260px] md:w-auto">
         <Card display="p-6 overflow-hidden">
-          <div className="h-[35vh] overflow-x-scroll enjoy-content">
+          <div className="h-[150px] overflow-x-scroll enjoy-content">
             <Link
               label={header}
               route={route}
