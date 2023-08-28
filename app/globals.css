@@ -83,3 +83,7 @@ body {
 .enjoy-card {
   height: 35vh;
 }
+
+.shadow-text {
+  text-shadow: 2px 2px 4px #000000;
+}
