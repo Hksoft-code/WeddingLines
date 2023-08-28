@@ -3,7 +3,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/sections/Footer";
 import SmallDeviceNavBar from "@/components/SmallDeviceNavBar";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,13 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className} style={{ background: "none" }}>
-        <Head>
-          <meta
-            name="viewport"
-            content="viewport-fit=cover"
-            initial-scale="1.0"
-          />
-        </Head>
         <header>
           <span className="lg:block hidden">
             <NavigationBar />
