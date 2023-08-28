@@ -14,7 +14,7 @@ const WeddingWebsites = () => {
       <div className="flex overflow-x-scroll enjoy-content">
         {weddingWebsites.map((weddingWebsite) => (
           <Card key={weddingWebsite}>
-            <div className="w-[280px]">
+            <div className="w-[260px]">
               <Image src={weddingWebsite} alt="" width={300} height={350} />
             </div>
           </Card>
