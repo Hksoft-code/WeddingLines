@@ -4,7 +4,7 @@ import Link from "./Links/Link";
 const RealComponent = ({ image, label, text, route }) => {
   return (
     <Card display="mr-3">
-      <div className="lg:w-[300px] w-[300px] h-[400px]">
+      <div className="lg:w-[280px] w-[300px] h-[400px]">
         <div
           className="h-[230px]"
           style={{
