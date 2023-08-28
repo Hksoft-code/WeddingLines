@@ -23,9 +23,9 @@ const EnjoyCard = ({
             />
           </div>
           {showBackgroundImage ? (
-            <div className="w-1/2 venue lg:h-[200px]"></div>
+            <div className="w-1/2 venue md:h-[210px]"></div>
           ) : (
-            <div className="w-1/4">{icon}</div>
+            <div className="w-1/4 md:h-[210px]">{icon}</div>
           )}
         </div>
       </div>
