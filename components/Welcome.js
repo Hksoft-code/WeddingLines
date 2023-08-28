@@ -8,7 +8,7 @@ const Welcome = () => {
 
   return (
     <div className="w-full md:p-10 pt-7 pr-3 pl-3 pb-7 h-[400px] homepage flex flex-col justify-center items-center mb-7">
-      <h1 className="font-semibold text-4xl md:text-red-700 mb-5 text-center text-black">
+      <h1 className="font-semibold text-4xl text-white shadow-text mb-7">
         The Wedding Line
       </h1>
       <Input
