@@ -18,6 +18,13 @@ const Welcome = () => {
         handleChange={(event) => setPlace(event.target.value)}
         _class="md:w-3/4 w-full md:p-4 p-3 outline-none rounded-lg"
       />
+      <button
+        type="button"
+        className="border border-white md:border-black rounded-lg md:p-4 p-3 md:w-1/4 w-1/2 text-white shadow-text outline-none mt-3 font-semibold md:hover:border-red-600 hover:border-black"
+        style={{ boxShadow: "0 0 10px 0 rgba(0, 0, 0, .5)" }}
+      >
+        Search
+      </button>
     </div>
   );
 };
