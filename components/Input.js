@@ -1,5 +1,3 @@
-import React from "react";
-
 const Input = ({ type, name_, value, handleChange, _class, placeholder }) => {
   return (
     <input
