@@ -113,12 +113,14 @@ const Sidebar = ({ showSideBar }) => {
           </div>
         </>
       ) : (
-        <div className="mt-1">
-          <PlanningHiddenLinks
-            planning={planning}
-            showIcon={true}
-            handleClick={() => handleClick(setPlanning)}
-          />
+        <div>
+          <span style={{ marginTop: 10 }}>
+            <PlanningHiddenLinks
+              planning={planning}
+              showIcon={true}
+              handleClick={() => handleClick(setPlanning)}
+            />
+          </span>
           <WeddingvenHiddenlinks
             venues={venue}
             showIcon={true}

@@ -63,8 +63,10 @@ const BlogHiddenLinks = ({ blogs, mouseLeave, showIcon, handleClick }) => {
                   />
                 </span>
               </div>
-              <div>
-                <Card setWidth={"w-2/3"}>
+              <div
+                className={`${window.innerWidth >= 1024 ? "w-1/4" : "w-full"}`}
+              >
+                <Card>
                   <p className="font-bold mb-4">Real weddings</p>
                   <p style={{ marginBottom: 20 }}>
                     Find the wedding Inspiration that fits your style with

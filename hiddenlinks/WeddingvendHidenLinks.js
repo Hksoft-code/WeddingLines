@@ -25,7 +25,7 @@ const WeddingvendHidenLinks = ({
               route="#hiringvendors"
               _class="font-bold hover:text-red-800"
             />
-            <div className="flex justify-between flex-col lg:flex-row">
+            <div className="lg:flex lg:justify-between">
               <WeddingVendComponent
                 labelOne="Wedding Photographers"
                 labelTwo="Caterers"
@@ -50,7 +50,7 @@ const WeddingvendHidenLinks = ({
                 routeTwo="#Invitations"
                 routeThree="#Planners"
               />
-              <div>
+              <div className="lg:w-1/4">
                 <HiddenLinkCard
                   head="Destination weddings"
                   text="Easily plan your international wedding"
@@ -62,7 +62,11 @@ const WeddingvendHidenLinks = ({
               <h1 className="uppercase font-bold mb-4">
                 complete your wedding team
               </h1>
-              <span>
+              <span
+                className={`flex ${
+                  window.innerWidth >= 1024 ? "flex-row" : "flex-col"
+                }`}
+              >
                 {links.map((link, index) => (
                   <Link
                     label={link.label}

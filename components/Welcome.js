@@ -2,7 +2,6 @@
 
 import React from "react";
 import Input from "./Input";
-import Image from "next/image";
 import { GoSearch } from "react-icons/go";
 
 const Welcome = () => {

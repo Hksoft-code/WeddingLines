@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div>
           <p className="font-bold mb-4 text-md lg:mt-auto mt-6">
-            Get the WeddingWire app
+            Get the Wedding Line app
           </p>
           <span className="flex flex-wrap mb-4">
             <Image

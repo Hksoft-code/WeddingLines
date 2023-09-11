@@ -22,19 +22,13 @@ const WeddingvenHiddenlinks = ({
                 className="mb-2"
               />
             </span>
-            <Link
-              route="#Weddingvenues"
-              label="Wedding venues"
-              _class="font-bold hover:text-red-900"
-            />
-            <div className="flex flex-col lg:flex-row">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  marginTop: 20,
-                }}
-              >
+            <div className="lg:flex lg:justify-between">
+              <div className="flex flex-col">
+                <Link
+                  route="#Weddingvenues"
+                  label="Wedding venues"
+                  _class="font-bold hover:text-red-900"
+                />
                 <Link
                   label="Banquet halls"
                   route="#banquethalls"
@@ -53,20 +47,14 @@ const WeddingvenHiddenlinks = ({
                   _class="mt-4 hover:text-red-900"
                   style={{ marginTop: 12 }}
                 />
+              </div>
+              <div className="flex flex-col">
                 <Link
                   label="Promotions"
                   route="#promotions"
                   _class="font-bold hover:text-red-900"
                   style={{ marginTop: 12 }}
                 />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  marginTop: 20,
-                }}
-              >
                 <Link
                   label="Hotels"
                   route="#hotels"
@@ -86,7 +74,7 @@ const WeddingvenHiddenlinks = ({
                   style={{ marginTop: 12 }}
                 />
               </div>
-              <div>
+              <div style={{ transform: "translateX(-10px)" }}>
                 <HiddenLinkCard
                   head="Destination weddings"
                   text="Easily plan your international wedding"

@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const HiddenLinkCard = ({ head, text, image }) => {
   return (
-    <Card setWidth={"w-2/3"}>
+    <Card>
       <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-1 p-2">
         <div className="col-span-2">
           <h1 className="font-bold mb-4">{head}</h1>
@@ -13,8 +13,8 @@ const HiddenLinkCard = ({ head, text, image }) => {
           <Image
             src={image}
             alt=""
-            height={130}
-            width={130}
+            height={110}
+            width={110}
             className="rounded-full"
           />
         </div>

@@ -57,7 +57,12 @@ const PlanningHiddenLinks = ({
                 labelTwo="Hashtag Generator"
                 routeTwo="#hashtaggenerator"
               />
-              <div className="m-4" style={{ transform: "translateY(-30px)" }}>
+              <div
+                className={`m-4 ${
+                  window.innerWidth >= 1024 ? "w-1/4" : "w-full"
+                }`}
+                style={{ transform: "translateY(-30px)" }}
+              >
                 <HiddenLinkCard
                   head="Get the WeddingLine app"
                   image={weddingLogo}
